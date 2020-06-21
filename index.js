@@ -57,7 +57,7 @@ function onclickHandler() {
    tubeMix.setAttribute('disabled', true);
    buttonSample.setAttribute('disabled', true);
 
-   form.style.display = "initial";
+   form.style.display = "table";
 }
 
 function defaultValues() {

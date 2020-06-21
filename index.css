@@ -4,36 +4,112 @@ html {
 }
 
 table {
-  border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 0.8rem;
 }
 
+button {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  outline:none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:disabled {
+  background-color: rgb(0, 75, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  outline:none;
+  opacity: 0.6;
+}
+
+button:hover:enabled {
+  background-color: rgb(0, 75, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+fieldset input {
+  width: 200%;
+}
+
+select, input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+fieldset, form {
+  width: 95%;
+  border-radius: 5px;
+}
+
+fieldset div, form div {
+  display: table-row;
+  width: 100%;
+}
+
+form label {
+  max-width: 40px;
+}
+
+input, label, button {
+  display: table-cell;
+  margin: 2px;
+  border-width: 1px;
+}
+
+label, form span {
+  text-align: right;
+}
+
+div input {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border: rgb(220,220,220);
+  border-collapse: collapse;
+}
+
 td, th {
-  border: 1px solid rgb(190,190,190);
+  border-left: 2px solid rgb(220,220,220);
+  border-right: 2px solid rgb(220,220,220);
   padding: 10px 20px;
 }
 
 th {
-  background-color: rgb(235,235,235);
+  background-color: rgb(220,220,220);
 }
 
 td {
   text-align: center;
 }
 
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
-}
-
 tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
+  background-color: rgb(240, 240, 240);
 }
 
 caption {
   padding: 10px;
+  font-size: medium;
+  font-weight:bold
 }
+
 tbody {
   font-size: 90%;
   font-style: italic;
