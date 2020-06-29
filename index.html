@@ -10,7 +10,7 @@
 
 <body>
    <div class="container">
-      <h1>
+      <h1 style="text-align: center;">
          Cálculo para PCR
       </h1>
       <fieldset>
@@ -24,26 +24,25 @@
             <input id="inputTableTitle" type="text" name="inputTableTitle" min="1" placeholder="Define o título">
          </div>
          <div>
-            <label></label>
             <button type="button" id="amostra">CRIAR TABELA</button>
          </div>
       </fieldset>
-      <form>
-         <div>
-            <label>Produto
-               <select autofocus>
-                  <option value="" selected>Nenhum</option>
-                  <option value="DNA">DNA</option>
-                  <option value="Água">Água</option>
-                  <option value="DNTP's">DNTP's</option>
-                  <option value="Magnésio">Magnésio</option>
-                  <option value="Tampão">Tampão;</option>
-                  <option value="Primer 1">Primer 1</option>
-                  <option value="Primer 2">Primer 2</option>
-               </select>
-               <span>ou</span>
-            </label>
-               <input id="product" type="text" name="product" placeholder="Quais reagentes você irá utilizar?">
+      <form id="esq">
+         <div style="height: 40px;"></div>
+         <div class="ini">
+            <label class="ini">Produto</label>
+            <select autofocus class="ini">
+               <option value="" selected>Nenhum</option>
+               <option value="DNA">DNA</option>
+               <option value="Água">Água</option>
+               <option value="DNTP's">DNTP's</option>
+               <option value="Magnésio">Magnésio</option>
+               <option value="Tampão">Tampão;</option>
+               <option value="Primer 1">Primer 1</option>
+               <option value="Primer 2">Primer 2</option>
+            </select>
+            <span>ou</span>   
+            <input class="ini" id="product" type="text" name="product" placeholder="Quais reagentes você irá utilizar?">
          </div>
          <div>
             <label for="sc">Concentração do Estoque</label>
@@ -59,7 +58,7 @@
          </div>
          <div>
             <label for="sample">Quantidade de Amostras</label>
-            <input id="sample" type="text" name="quantidadeDeAmostras" placeholder="Insira a quantidade de amostra">
+            <input class="ult" id="sample" type="text" name="quantidadeDeAmostras" placeholder="Insira a quantidade de amostra">
          </div>
          <div>
             <label></label>
