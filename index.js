@@ -72,3 +72,12 @@ function defaultValues() {
 function onchangeHandler(e) {
    inputs[0].value = e.target.value;
 }
+//botão meio errado
+function hideForm() {
+   if(form.style.display == "") {
+      form.style.display = "none";
+   }
+   else {
+      form.style.display = "";
+   }
+}
